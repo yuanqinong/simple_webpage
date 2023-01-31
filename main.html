@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>ICTech</title>
+<link rel="stylesheet" href="style.css">
+<link href='https://fonts.googleapis.com/css?family=Droid+Sans:700|Droid+Serif' rel='stylesheet' type='text/css'>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+<div>
+    <ul class="navigator">
+      <li><a href="form.html">Contact</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="main.html">Home</a></li>
+    </ul>
+ </div>
+
+<div id="banner">
+  <div id="bannertext">
+    <h1>International Conference of Technology 2023</h1>
+    <p>02 February 2023</p>
+  </div>
+</div>
+
+<div id="content">
+  <h2>About ICTech</h2>
+  <p>International Conference of Technology (ICTech) is a quarterly international referred conference that aims to explore, develop, and clarify the knowledge of engineering design and technology. It also serves as a forum for discussion among technology researchers and practitioners and keeps practitioners and researchers up to date on current issues and best practises.</p>
+  <p>ICTech provides important chances for academics to further their work and pick up new skills from their peers. These conferences, which take place all around the world, give students, teachers, researchers, and business experts the chance to mingle and talk about the latest findings, ideas, and advancements in their respective fields.</p>
+  <p>ICTech assists participants in honing their skills. Attendees at conferences get access to numerous networking possibilities, which may lead to a variety of profitable professional prospects. Such conferences are becoming more and more common in a competitive employment market, especially in recent years as speakers and attendees want to distinguish out in their industry.</p>
+</div>
+
+<script type="text/javascript">
+    function EasyPeasyParallax() {
+            scrollPos = $(this).scrollTop();
+            $("#banner").css({
+            "background-position": "50% " + -scrollPos / 4 + "px"
+            });
+            $("#bannertext").css({
+            "margin-top": scrollPos / 4 + "px",
+            opacity: 1 - scrollPos / 250
+            });
+    }
+    $(document).ready(function () {
+        $(window).scroll(function () {
+        EasyPeasyParallax();
+        });
+    });
+    
+</script>
+</body>
+
+</html>
